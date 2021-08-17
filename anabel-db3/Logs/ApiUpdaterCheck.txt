@@ -1,0 +1,20 @@
+[api-updater (non-obsolete-error-filter)] 8/17/2021 5:01:51 PM : Starting /Users/codeninjas/Documents/2020.3.3f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 163.067ms
+moved types parse time: 57ms
+candidates parse time : 1ms
+C# parse time         : 285ms
+candidates check time : 29ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 8/17/2021 5:02:19 PM : Starting /Users/codeninjas/Documents/2020.3.3f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 47.639ms
+moved types parse time: 46ms
+candidates parse time : 1ms
+C# parse time         : 189ms
+candidates check time : 28ms
+console write time    : 0ms
+
