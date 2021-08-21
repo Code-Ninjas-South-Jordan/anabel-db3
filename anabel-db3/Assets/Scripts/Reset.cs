@@ -7,6 +7,10 @@ public class Reset : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(0);
+        DestroyObject();
+    }
+    private void DestroyObject()
+    {
+        Destroy(gameObject);
     }
 }
