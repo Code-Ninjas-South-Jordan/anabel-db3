@@ -16,10 +16,14 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public int pointsWorth = 1;
     private int score;
+    public Text gameOverText;
+    public Text playAgainText;
+    public GameObject bombObject;
     void Start()
     {
        spawner.active = false;
        title.SetActive(true); 
+       scoreText.text = "Score: 0";
     }
     void Awake()
     {
@@ -53,6 +57,7 @@ public class GameManager : MonoBehaviour
             {
                 scoreSystem.GetComponent<Score>().AddScore(pointsWorth);
                 Destroy(bombObject);
+                scoreText.text = "Score: " + scoreSystem.GetComponent<Score>().score;
             }
         }
     }
