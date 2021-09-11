@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
         splash.SetActive(false);
         scoreText.enabled = true;
         scoreSystem.GetComponent<Score>().score = 0;
+        scoreText.text = "Score: 0";
         scoreSystem.GetComponent<Score>().Start();
     }
     void OnPlayerKilled()
