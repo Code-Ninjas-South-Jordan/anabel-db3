@@ -45,19 +45,22 @@ public class GameManager : MonoBehaviour
         {
             if(!player)
             {
+                print("pain");
                 OnPlayerKilled();
             }
         }
+        print(gameStarted);
         var nextBomb = GameObject.FindGameObjectsWithTag("Bomb");
         foreach(GameObject bombObject in nextBomb)
-        {   if(!gameStarted)
+        {   if (!gameStarted)
             {
                 Destroy(bombObject);
-            } else if(bombObject.transform.position.y < (-screenBounds.y) && gameStarted)
+            } else if (bombObject.transform.position.y < (-screenBounds.y))
             {
                 scoreSystem.GetComponent<Score>().AddScore(pointsWorth);
                 Destroy(bombObject);
                 scoreText.text = "Score: " + scoreSystem.GetComponent<Score>().score;
+                print("score: " + scoreSystem.GetComponent<Score>().score);
             }
         }
     }
